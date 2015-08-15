@@ -1,0 +1,42 @@
+<div ng-controller="IndexController">
+
+  <super-navbar>
+    <super-navbar-button side="left">History</super-navbar-button>
+    <super-navbar-title>
+      Month-to-Date Summary
+    </super-navbar-title>
+    <super-navbar-button side="right">New</super-navbar-button>
+  </super-navbar>
+
+  <div class="list">
+    <div class="item item-divider">
+      <i class="icon ion-calendar"></i>Today</h2>
+    </div>
+    <label class="item item-input item-stacked-label">
+      <span>I Spent...</span>
+      <input type="text" placeholder="Enter Amount">
+    </label>
+    <label class="item item-input item-select">
+      <div class="input-label">
+        On...
+      </div>
+      <select>
+        <option ng-repeat="category in categories">
+          {{category}}
+        </option>
+      </select>
+    </label>
+    <!-- <ul class="list">
+      <li class="item item-checkbox" ng-repeat="category in categories">
+        <label class="checkbox">
+          <input type="checkbox">
+        </label>
+        {{category}}
+      </li>
+    </ul> -->
+    <div class="item">
+      <button class="button button-block">Save</button>
+    </div>
+  </div>
+
+</div>

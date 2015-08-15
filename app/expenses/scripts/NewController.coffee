@@ -1,0 +1,23 @@
+angular
+  .module('expenses')
+  .controller 'NewController', ($scope, supersonic) ->
+    $scope.expense = {}
+    $scope.total = 0
+    # Controller functionality here
+    $scope.categories = [
+      'Food',
+      'Rent',
+      'Mortgage',
+      'Utilities',
+      'Clothing',
+      'Transportation',
+      'Medical',
+      'Insurance',
+      'Education',
+      'Travel',
+      'Others'
+    ]
+    
+    $scope.createExpense = (expense) ->
+      expenseTotal = parseFloat(expense.amount)
+      $scope.total += expenseTotal
