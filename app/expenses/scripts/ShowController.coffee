@@ -15,3 +15,5 @@ angular
       'Travel',
       'Others'
     ]
+    
+    $scope.total = window.localStorage.getItem('total')

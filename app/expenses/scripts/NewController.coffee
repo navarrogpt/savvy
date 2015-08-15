@@ -21,3 +21,4 @@ angular
     $scope.createExpense = (expense) ->
       expenseTotal = parseFloat(expense.amount)
       $scope.total += expenseTotal
+      window.localStorage.setItem('total', $scope.total)
