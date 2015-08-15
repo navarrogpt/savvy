@@ -4,19 +4,19 @@
     <super-navbar-title>
       My Profile
     </super-navbar-title>
-    <super-navbar-button side="right">Edit</super-navbar-button>
+    <super-navbar-button side="right" location="profile#edit">Edit</super-navbar-button>
   </super-navbar>
 
   <div class="list">
-    <label class="item item-input">
-      <input type="text" placeholder="Last Name">
-    </label>
-    <label class="item item-input">
-      <input type="text" placeholder="First Name">
-    </label>
-    <label class="item item-input">
-      <input type="text" placeholder="Monthly Income">
-    </label>
+    <a class="item item-avatar" href="#">
+      <img src="{{user.avatar}}">
+      <h2 class="profile-name">{{user.firstName}} {{user.lastName}}</h2>
+      <p class="profile-username">{{user.username}}</p>
+    </a>
+    <a class="item item-icon-left" href="#">
+      <i class="icon ion-ionic"></i>
+      Check Mail
+    </a>
   </div>
 
 </div>

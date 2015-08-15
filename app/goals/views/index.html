@@ -2,12 +2,40 @@
 
   <super-navbar>
     <super-navbar-title>
-      Index
+      Your Goals
     </super-navbar-title>
   </super-navbar>
 
-  <div class="padding">
-    <h1>Pow! Here's your fresh module!</h1>
+  <!-- <div class="padding">
+    <h3 class="text-center">{{user.username}}</h3>
+  </div> -->
+  <div class="goals item">
+    <div class="row">
+      <div class="col col-33" ng-repeat="goal in goals1">
+        <div class="goal">
+          <h4 class="text-center">
+            <i class="icon ion-arrow-up-a"></i>
+            {{goal.name}}
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-33" ng-repeat="goal in goals2">
+        <div class="goal">
+          <img src="{{goal.avatar}}">
+          <h4 class="text-center">{{goal.name}}</h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-33" ng-repeat="goal in goals3">
+        <div class="goal">
+          <img src="{{goal.avatar}}">
+          <h4 class="text-center">{{goal.name}}</h4>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>

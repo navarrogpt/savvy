@@ -3,3 +3,60 @@
   text-align: center;
   font-weight: 600;
 }
+
+body {
+  background-color: #fddb15;
+}
+
+.button-default {
+  background-color: #f0c630;
+  border: 1px solid #f0c630;
+  color: #fff;  
+}
+
+/*** Profile ***/
+.item-avatar {
+  background-color: #fddc33;
+  border: 0;
+  
+  h2 {
+    color: #3b3b3b !important;
+  }
+  
+  p {
+    color: #ffffff !important;
+  }
+}
+
+.item {
+  border: 0 !important;
+}
+
+.profile-name {
+  color: #3b3b3b;
+}
+
+.profile-username {
+  color: #3b3b3b !important;
+}
+
+/*** End of Profile ***/
+
+/*** Goal ***/
+.padding {
+  background-color: #efefef;
+  
+  h3 {
+    font-weight: 300;
+  }
+}
+
+.goals {
+  background-color: #fddb15;
+}
+
+.goal {
+  background-color: #fddb15 !important;
+  height: 100px;
+}
+/*** End of Goal ***/

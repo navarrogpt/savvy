@@ -4,14 +4,15 @@
  ***********************************************************/
 
 navigation-bar {
-  background-color: #fddb17;
-  color: #ffffff;
+  background-color: #f0c630;
+  color: #000;
+  border: 0 !important;
 }
 
 navigation-bar title {
-  color: #ffffff;
+  color: #000;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 navigation-bar button, navigation-bar back-bar-button {
@@ -20,18 +21,18 @@ navigation-bar button, navigation-bar back-bar-button {
 }
 
 tab-bar {
-  background-color: #ffffff;
-  border-top: 1px #d8d8d8 solid;
+  background-color: #fddb15;
+  border-top: 1px #3b3b3b solid;
 }
 
 tab-bar tab-bar-item {
-  color: #b0b1b4;
+  color: #bbbbbb;
   font-family: "Avenir";
   font-size: 10px;
 }
 
 tab-bar tab-bar-item:selected {
-  color: #1596f7;
+  color: #3b3b3b;
 }
 
 tab-bar-item#settings {
@@ -43,7 +44,11 @@ tab-bar-item#index {
 }
 
 tab-bar-item#expenses {
-  background-image: url(icons/home.svg);
+  background-image: url(icons/house.svg);
+}
+
+tab-bar-item#profile {
+  background-image: url(icons/profile.svg);
 }
 
 tab-bar-item#income {
