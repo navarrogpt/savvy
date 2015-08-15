@@ -22,7 +22,7 @@ module.exports =
     {
       title: "My Goals"
       id: "goals"
-      location: "goals#index}"
+      location: "goals#index"
     }
     {
       title: "My Profile"
