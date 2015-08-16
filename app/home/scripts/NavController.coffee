@@ -32,13 +32,19 @@ angular
         supersonic.ui.layers.push "home#alerts"
 
     $scope.showCommunity = () ->
-      return
+      supersonic.ui.drawers.close().then ->
+        supersonic.ui.layers.popAll()
+        supersonic.ui.layers.push "home#community"
 
     $scope.showHelp = () ->
-      return
+      supersonic.ui.drawers.close().then ->
+        supersonic.ui.layers.popAll()
+        supersonic.ui.layers.push "home#help"
 
     $scope.showSettings = () ->
-      return            
+      supersonic.ui.drawers.close().then ->
+        supersonic.ui.layers.popAll()
+        supersonic.ui.layers.push "home#settings"    
           
     $scope.expensesToggle = () ->
       if $scope.showExpensesNav == false
