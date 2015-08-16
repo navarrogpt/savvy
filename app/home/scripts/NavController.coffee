@@ -21,7 +21,7 @@ angular
         supersonic.ui.layers.popAll()
         supersonic.ui.layers.push "expenses#index"
         
-    $scope.showTodaysTips = () ->
+    $scope.showTodaysTip = () ->
       supersonic.ui.drawers.close().then ->
         supersonic.ui.layers.popAll()
         supersonic.ui.layers.push "home#tips"
