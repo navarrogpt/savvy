@@ -1,6 +1,7 @@
 angular
   .module('expenses')
   .controller 'NewController', ($scope, supersonic) ->
+    supersonic.ui.tabs.hide()
     $scope.expense = {}
     $scope.total = 0
     # Controller functionality here
