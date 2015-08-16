@@ -1,19 +1,62 @@
-<meta name="viewport" content="width=250, initial-scale=1, user-scalable=no">
 <div ng-controller="NavController">
   <div class="drawer">
     <div class="list drawer-list">
-      <a class="item item-avatar" href="#">
+      <a class="item item-avatar drawer-item-avatar" href="#">
         <img src="{{user.avatar}}">
-        <h2 class="profile-name">{{user.firstName}} {{user.lastName}}</h2>
-        <p class="profile-username">{{user.username}}</p>
+        <h2 class="profile-name drawer-profile-name">{{user.firstName}} {{user.lastName}}</h2>
+        <p class="profile-username drawer-username">{{user.username}}</p>
       </a>
     </div>
     <ul class="list drawer-list">
-      <li class="item" ng-click="showGoals()">Goals</li>
-      <li class="item" ng-click="showExpenses()">Expenses</li>
-      <li class="item">
-        <button class="button button-block button-default">Logout</button>
+      <li class="item drawer-item item-icon-left" ng-click="showProfile()">
+        <i class="icon icon-profile drawer-item-icon"></i>
+        Profile
+      </li>
+      <li class="item drawer-item item-icon-left" ng-click="showGoals()">
+        <i class="icon icon-goals drawer-item-icon"></i>
+        Goals
+      </li>
+      <li class="item drawer-item item-icon-left item-icon-right" ng-click="expensesToggle()">
+        <i class="icon icon-expenses drawer-item-icon"></i>
+        Expenses
+        <i class="icon icon-down-chevron drawer-item-icon"></i>
+      </li>
+      <ul class="list sub-drawer-list" ng-show="showExpensesNav">
+        <li class="item sub-drawer-item" ng-click="showKeyIn()">
+          Key-In
+        </li>
+        <li class="item sub-drawer-item">
+          Import
+        </li>
+        <li class="item sub-drawer-item" ng-click="showVisualize()">
+          Visualize
+        </li>
+      </ul>
+      <li class="item drawer-item item-icon-left" ng-click="showExpenses()">
+        <i class="icon icon-todays-tip drawer-item-icon"></i>
+        Today's Tip
+        <span class="badge badge-energized drawer-badge">1</span>
+      </li>
+      <li class="item drawer-item item-icon-left" ng-click="showExpenses()">
+        <i class="icon icon-alerts drawer-item-icon"></i>
+        Alerts
+        <span class="badge badge-energized drawer-badge">2</span>
+      </li>
+      <li class="item drawer-item item-icon-left" ng-click="showExpenses()">
+        <i class="icon icon-community drawer-item-icon"></i>
+        Community
+      </li>
+      <li class="item drawer-item item-icon-left" ng-click="showExpenses()">
+        <i class="icon icon-help drawer-item-icon"></i>
+        Help
+      </li>
+      <li class="item drawer-item item-icon-left" ng-click="showExpenses()">
+        <i class="icon icon-settings drawer-item-icon"></i>
+        Settings
       </li>
     </ul>
+    <div class="item drawer-item-no-border">
+      <button class="button button-block button-default">Logout</button>
+    </div>
   </div>
 </div>

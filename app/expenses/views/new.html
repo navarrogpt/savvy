@@ -1,34 +1,21 @@
 <div ng-controller="NewController">
 
   <super-navbar>
-    <super-navbar-button side="left" location="expenses#index">History</super-navbar-button>
     <super-navbar-title>
-      New Expense
+      Expenses
     </super-navbar-title>
-    <super-navbar-button side="right" location="expenses#show">Current</super-navbar-button>
   </super-navbar>
 
   <div class="list">
-    <div class="item item-divider">
-      <i class="icon ion-calendar"></i>Today</h2>
-    </div>
-    <label class="item item-input item-stacked-label">
-      <span>I Spent...</span>
-      <input type="text" placeholder="Enter Amount" ng-model="expense.amount">
+    <h2 class="item item-white item-amount-heading item-no-border">Enter Amount</h2>
     </label>
-    <label class="item item-input item-select">
-      <div class="input-label">
-        On...
-      </div>
-      <select>
-        <option ng-model="expense.categories" ng-repeat="category in categories">
-          {{category}}
-        </option>
-      </select>
+    <label class="item item-input item-no-border">
+      <input class="item-amount" type="text" placeholder="$0.00" ng-model="expense.amount">
     </label>
-    <div class="item">
-      <button class="button button-block button-default" ng-click="createExpense(expense)">Save</button>
-    </div>
+    <h2 class="item item-gray item-categorise-heading item-no-border">Categorise</h2>
+  </div>
+  
+  <div>
   </div>
 
 </div>

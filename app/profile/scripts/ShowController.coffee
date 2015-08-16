@@ -1,7 +1,7 @@
 angular
   .module('profile')
   .controller 'ShowController', ($scope, supersonic) ->
-    userData = {firstName: 'Savannah', lastName: 'Lee', username: 'savvyuser', age: '20', avatar: 'http://s3media.247sports.com/Uploads/Assets/23/856/2856023.jpg'}
+    userData = {firstName: 'Savannah', lastName: 'Lee', username: 'saviuser', age: '20', avatar: 'http://f1.pepst.com/c/B8B40F/133834/ssc3/home/004/all.quality.zone/albums/21_indian_girl.jpg_480_480_0_64000_0_1_0.jpg'}
     window.localStorage.setItem('user', JSON.stringify userData)
 
     $scope.user = JSON.parse window.localStorage.getItem('user')

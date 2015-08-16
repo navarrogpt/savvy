@@ -9,12 +9,15 @@
   <!-- <div class="padding">
     <h3 class="text-center">{{user.username}}</h3>
   </div> -->
-  <div class="goals item">
+  <div class="goals item item-no-border">
     <div class="row">
       <div class="col col-33" ng-repeat="goal in goals1">
-        <div class="goal">
+        <div class="goal" ng-click="showGoal()">
+          <br/>
           <h4 class="text-center">
-            <i class="icon icon-house"></i>
+            <br/>
+            <i class="icon {{goal.icon}} goal-icon"></i>
+            <br/>
             {{goal.name}}
           </h4>
         </div>
@@ -22,17 +25,27 @@
     </div>
     <div class="row">
       <div class="col col-33" ng-repeat="goal in goals2">
-        <div class="goal">
-          <img src="{{goal.avatar}}">
-          <h4 class="text-center">{{goal.name}}</h4>
+        <div class="goal" ng-click="showGoal()">
+          <br/>
+          <h4 class="text-center">
+            <br/>
+            <i class="icon {{goal.icon}} goal-icon"></i>
+            <br/>
+            {{goal.name}}
+          </h4>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col col-33" ng-repeat="goal in goals3">
-        <div class="goal">
-          <img src="{{goal.avatar}}">
-          <h4 class="text-center">{{goal.name}}</h4>
+        <div class="goal" ng-click="showGoal()">
+          <br/>
+          <h4 class="text-center">
+            <br/>
+            <i class="icon {{goal.icon}} goal-icon"></i>
+            <br/>
+            {{goal.name}}
+          </h4>
         </div>
       </div>
     </div>

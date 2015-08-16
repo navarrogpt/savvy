@@ -17,6 +17,10 @@ body {
 }
 
 /*** Drawer ***/
+.drawer__background {
+  background-color: #3b3b3b !important;
+}
+
 .drawer {
   background-color: #3b3b3b;
 }
@@ -24,7 +28,95 @@ body {
 .drawer-list {
   background-color: #3b3b3b;
 }
+
+.sub-drawer-list {
+  background-color: #3b3b3b; 
+  margin: 0 !important; 
+}
+
+.drawer-item-avatar {
+  background-color: #3b3b3b !important;
+}
+
+.drawer-profile-name {
+  color: #dfdfdf !important;
+}
+
+.drawer-username {
+  color: #dfdfdf !important;
+}
+
+.drawer-item {
+  background-color: #3b3b3b !important;
+  border: 1px solid #4b4b4b !important; 
+  color: #dfdfdf !important; 
+}
+
+.sub-drawer-item {
+  background-color: #3b3b3b !important;
+  border: 1px solid #4b4b4b !important; 
+  color: #dfdfdf !important;
+  padding-left: 50px !important; 
+}
+
+.drawer-item-no-border {
+  background-color: #3b3b3b !important;
+  border: 0 !important;
+  color: #dfdfdf !important; 
+}
+
+.drawer-item-icon {
+  font-size: 16px !important;
+}
+
+.drawer-badge {
+  color: #3b3b3b !important;
+}
 /*** End of Drawer ***/
+
+/*** Expenses ***/
+.item-white {
+  background-color: #fff !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.item-gray {
+  background-color: #b9b9b9 !important;
+}
+
+.item-amount {
+  text-align: center;
+  margin: 50px auto !important;
+  padding: 50px auto !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  font-size: 36px !important;
+}
+
+.item-amount-heading {
+  color: #bbb !important;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  text-align: center !important;
+  width: 100% !important;
+  padding-top: 10px !important;
+}
+
+.item-categorise-heading {
+  color: #fff !important;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  text-align: center !important;
+  width: 100% !important;
+  padding: 10px auto !important;
+}
+
+.item-no-border {
+  border: 0 !important;
+}
+
+/*** End of Expenses ***/
 
 /*** Profile ***/
 .item-avatar {
@@ -40,29 +132,17 @@ body {
   }
 }
 
-.item {
-  border: 0 !important;
-}
-
-.profile-name {
+/*.profile-name {
   color: #3b3b3b;
 }
 
 .profile-username {
   color: #3b3b3b !important;
-}
+}*/
 
 /*** End of Profile ***/
 
-/*** Goal ***/
-.padding {
-  background-color: #efefef;
-  
-  h3 {
-    font-weight: 300;
-  }
-}
-
+/*** Goals ***/
 .goals {
   background-color: #fddb15;
 }
@@ -70,5 +150,12 @@ body {
 .goal {
   background-color: #fddb15 !important;
   height: 100px;
+  line-height: 50px !important;
 }
-/*** End of Goal ***/
+
+.goal-icon {
+  font-size: 24px !important;
+  color: #3b3b3b;
+}
+
+/*** End of Goals ***/

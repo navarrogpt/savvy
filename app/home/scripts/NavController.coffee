@@ -4,14 +4,44 @@ angular
     # Controller functionality here
     $scope.user = JSON.parse window.localStorage.getItem('user')
     
+    $scope.showExpensesNav = false
+    
     $scope.showGoals = () ->
       supersonic.ui.drawers.close().then ->
-        view = new supersonic.ui.View "goals#index"
-        view.start("goals#index").then (startedView) ->
-          supersonic.ui.layers.replace startedView
-          
-    $scope.showExpenses = () ->
+        supersonic.ui.layers.popAll()
+        supersonic.ui.layers.push "goals#index"
+    
+    $scope.showKeyIn = () ->
       supersonic.ui.drawers.close().then ->
-        view = new supersonic.ui.View "expenses#index"
-        view.start("expenses#index").then (startedView) ->
-          supersonic.ui.layers.replace startedView
+        supersonic.ui.layers.popAll()
+        supersonic.ui.layers.push "expenses#new"
+    
+    $scope.showVisualize = () ->
+      supersonic.ui.drawers.close().then ->
+        supersonic.ui.layers.popAll()
+        supersonic.ui.layers.push "expenses#index"
+        
+    $scope.showTodaysTips = () ->
+      supersonic.ui.drawers.close().then ->
+        supersonic.ui.layers.popAll()
+        supersonic.ui.layers.push "home#tips"
+
+    $scope.showAlerts = () ->
+      supersonic.ui.drawers.close().then ->
+        supersonic.ui.layers.popAll()
+        supersonic.ui.layers.push "home#alerts"
+
+    $scope.showCommunity = () ->
+      return
+
+    $scope.showHelp = () ->
+      return
+
+    $scope.showSettings = () ->
+      return            
+          
+    $scope.expensesToggle = () ->
+      if $scope.showExpensesNav == false
+        $scope.showExpensesNav = true
+      else
+        $scope.showExpensesNav = false
