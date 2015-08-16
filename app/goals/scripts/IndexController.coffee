@@ -1,6 +1,7 @@
 angular
   .module('goals')
   .controller 'IndexController', ($scope, supersonic) ->
+    supersonic.ui.tabs.hide()
     # Controller functionality here
     $scope.user = JSON.parse window.localStorage.getItem('user')
     $scope.goals1 = [{name: 'Home', avatar: ''}, {name: 'Education', avatar: ''}, {name: 'Shopping', avatar: ''}]

@@ -44,6 +44,14 @@ module.exports =
       location: "example#using-the-scanner"
     }
   ]
+  
+  drawers:
+    left:
+      id: "nav-drawer"
+      location: "home#nav"
+      showOnAppLoad: false
+    options:
+      animation: "slideFromLeft"
 
   # drawers:
   #   left:

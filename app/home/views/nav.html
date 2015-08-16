@@ -1,0 +1,19 @@
+<meta name="viewport" content="width=250, initial-scale=1, user-scalable=no">
+<div ng-controller="NavController">
+  <div class="drawer">
+    <div class="list drawer-list">
+      <a class="item item-avatar" href="#">
+        <img src="{{user.avatar}}">
+        <h2 class="profile-name">{{user.firstName}} {{user.lastName}}</h2>
+        <p class="profile-username">{{user.username}}</p>
+      </a>
+    </div>
+    <ul class="list drawer-list">
+      <li class="item" ng-click="showGoals()">Goals</li>
+      <li class="item" ng-click="showExpenses()">Expenses</li>
+      <li class="item">
+        <button class="button button-block button-default">Logout</button>
+      </li>
+    </ul>
+  </div>
+</div>
